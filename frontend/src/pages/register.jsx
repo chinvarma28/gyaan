@@ -13,12 +13,12 @@ import { useToast } from "@/components/ui/use-toast"
 import { useAuth } from "../store/auth-provider"
 import { useEffect, useState } from 'react';
 
-export function Login() {
+export function Register() {
     const { toast } = useToast()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const { isLoggedIn, setIsLoggedIn } = useAuth();
-    
+
 
     useEffect(() => {
         if (isLoggedIn) {
@@ -28,7 +28,7 @@ export function Login() {
 
     const handleCreateAccount = async () => {
         try {
-            const response = await fetch('http://localhost:3000/user/login', {
+            const response = await fetch('http://localhost:3000/user/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -36,7 +36,7 @@ export function Login() {
                 body: JSON.stringify({ username: email, password })
             });
 
-            const data=await response.json();
+            const data = await response.json();
             if (response.ok) {
                 setIsLoggedIn(true);
                 localStorage.setItem('token', JSON.stringify(data.token).slice(1, -1));
@@ -60,9 +60,9 @@ export function Login() {
         <div className="lg:px-[20rem]">
             <Card className="mt-12">
                 <CardHeader className="space-y-1">
-                    <CardTitle className="text-2xl">Login</CardTitle>
+                    <CardTitle className="text-2xl">Create an account</CardTitle>
                     <CardDescription>
-                        Enter your email below to login to your account
+                        Enter your email below to create your account
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="grid gap-4">
@@ -88,12 +88,12 @@ export function Login() {
                 </CardContent>
                 <CardFooter className="flex flex-col">
                     <Button className="w-full" onClick={handleCreateAccount}>
-                        Login
+                        Create account
                     </Button>
-                    <p className="text-center text-gray-500 text-sm">
-                        Don&apos;t have an account?{" "}
-                        <a href="/register" className="text-blue-500">
-                            Register
+                    <p className="text-center text-sm text-gray-500">
+                        Already have an account?{" "}
+                        <a href="/login" className="text-blue-500">
+                            Login
                         </a>
                     </p>
 
