@@ -23,6 +23,8 @@ export default function Books() {
       .then(response => response.json())
       .then(data => setBooks(data))
       .catch(error => console.error('Error fetching books:', error));
+
+    console.log('books:', books)
   }, []);
 
   const filterBooks = (type) => {
@@ -30,8 +32,9 @@ export default function Books() {
       return (
         (type === 'all' || book.type.toLowerCase() === type) &&
         (searchQuery === '' ||
-          book.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          book.author.toLowerCase().includes(searchQuery.toLowerCase()))
+          book.name.toLowerCase().includes(searchQuery.toLowerCase()) 
+          || (book.author && book.author.toLowerCase().includes(searchQuery.toLowerCase()))
+        )
       );
     });
   };
