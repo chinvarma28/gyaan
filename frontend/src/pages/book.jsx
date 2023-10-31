@@ -10,7 +10,6 @@ export default function Book() {
     const { id } = useParams();
     const { toast } = useToast();
     const { isLoggedIn } = useAuth();
-    console.log(id);
     const [reviewText, setReviewText] = useState('');
     const [reviewBody, setReviewBody] = useState('');
 
@@ -19,6 +18,111 @@ export default function Book() {
     const [hoveredStars, setHoveredStars] = useState(0);
     const [userDetails, setUserDetails] = useState(null);
     const [reviews, setReviews] = useState([]);
+    const [editingReviewId, setEditingReviewId] = useState(null);
+
+
+
+    const handleEditClick = (reviewId) => {
+        setEditingReviewId(reviewId);
+        const review = reviews.find(review => review._id === reviewId);
+        setReviewText(review.title);
+        setReviewBody(review.content);
+        setStars(review.rating);
+    };
+
+    const handleCancelEdit = () => {
+        setEditingReviewId(null);
+        setReviewText('');
+        setReviewBody('');
+        setStars(0);
+    };
+
+    const handleUpdateReview = async (reviewId) => {
+        try {
+            const response = await fetch(`http://localhost:3000/reviews/${reviewId}`, {
+                method: 'PATCH',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    title: reviewText,
+                    content: reviewBody,
+                    rating: stars,
+                })
+            });
+
+            if (response.ok) {
+                console.log('Review updated successfully');
+                setEditingReviewId(null);
+                setReviewText('');
+                setReviewBody('');
+                setStars(0);
+                toast({
+                    title: 'Review updated successfully',
+                    description: 'Your review has been updated successfully',
+                })
+                setReviews(reviews.map(review => {
+                    if (review._id === reviewId) {
+                        return {
+                            ...review,
+                            title: reviewText,
+                            content: reviewBody,
+                            rating: stars
+                        };
+                    }
+                    return review;
+                }
+                ));
+                
+            } else {
+                console.error('Error updating review:', response.statusText);
+                toast({
+                    title: 'Error',
+                    description: 'Error updating review',
+                    variant: 'destructive'
+                })
+            }
+        } catch (error) {
+            console.error('Error updating review:', error);
+            toast({
+                title: 'Error',
+                description: 'Error updating review',
+                variant: 'destructive'
+            })
+        }
+    };
+
+    const handleDeleteReview = async (reviewId) => {
+        try {
+            const response = await fetch(`http://localhost:3000/reviews/${reviewId}`, {
+                method: 'DELETE',
+            });
+
+            if (response.ok) {
+                console.log('Review deleted successfully');
+                const updatedReviews = reviews.filter(review => review._id !== reviewId);
+                setReviews(updatedReviews);
+                toast({
+                    title: 'Review deleted successfully',
+                    description: 'Your review has been deleted successfully',
+                })
+            } else {
+                console.error('Error deleting review:', response.statusText);
+                toast({
+                    title: 'Error',
+                    description: 'Error deleting review',
+                    variant: 'destructive'
+                })
+            }
+        } catch (error) {
+            console.error('Error deleting review:', error);
+            toast({
+                title: 'Error',
+                description: 'Error deleting review',
+                variant: 'destructive'
+            })
+        }
+    };
 
     const handleStarClick = (star) => {
         setStars(star);
@@ -73,7 +177,6 @@ export default function Book() {
             });
 
             if (response.ok) {
-                console.log('Review created successfully');
                 setReviewText('');
                 setReviewBody('');
                 setStars(0);
@@ -81,6 +184,16 @@ export default function Book() {
                     title: 'Review created successfully',
                     description: 'Your review has been created successfully',
                 })
+                const createdReview = await response.json();
+                const authorName = userDetails?.user?.username;
+
+                setReviews([...reviews, {
+                    ...createdReview, userId: {
+                        username: authorName,
+                        _id: userDetails?.user?._id
+                    }
+                }]);
+                console.log(reviews)
             } else {
                 console.error('Error creating review:', response.statusText);
                 toast({
@@ -134,36 +247,40 @@ export default function Book() {
                         {book.description}
                     </p>
                 </div>
-                <div className='flex flex-col mt-16 px-10 gap-4'>
-                    <div className='flex gap-2'>
-                        {[1, 2, 3, 4, 5].map((star) => (
-                            <button
-                                key={star}
-                                onMouseEnter={() => handleStarHover(star)}
-                                onMouseLeave={() => handleStarHover(0)}
-                                onClick={() => handleStarClick(star)}
-                                className={`text-2xl ${(hoveredStars >= star || stars >= star) ? 'text-yellow-400' : 'text-gray-300'
-                                    } cursor-pointer`}
-                            >
-                                &#9733;
-                            </button>
-                        ))}
-                    </div>
-                    <Input placeholder='Enter your review'
-                        value={reviewText}
-                        onChange={(e) => setReviewText(e.target.value)}
-                    />
-                    <Textarea placeholder='Enter your review'
-                        value={reviewBody}
-                        onChange={(e) => setReviewBody(e.target.value)}
-                    />
-                    <Button
-                        onClick={handleReviewSubmit}
-                    >
-                        Submit Review
-                    </Button>
-                </div>
-
+                {
+                    editingReviewId == null && isLoggedIn && (
+                        <>
+                            <div className='flex flex-col mt-16 px-10 gap-4'>
+                                <div className='flex gap-2'>
+                                    {[1, 2, 3, 4, 5].map((star) => (
+                                        <button
+                                            key={star}
+                                            onMouseEnter={() => handleStarHover(star)}
+                                            onMouseLeave={() => handleStarHover(0)}
+                                            onClick={() => handleStarClick(star)}
+                                            className={`text-2xl ${(hoveredStars >= star || stars >= star) ? 'text-yellow-400' : 'text-gray-300'
+                                                } cursor-pointer`}
+                                        >
+                                            &#9733;
+                                        </button>
+                                    ))}
+                                </div>
+                                <Input placeholder='Enter your review'
+                                    value={reviewText}
+                                    onChange={(e) => setReviewText(e.target.value)}
+                                />
+                                <Textarea placeholder='Enter your review'
+                                    value={reviewBody}
+                                    onChange={(e) => setReviewBody(e.target.value)}
+                                />
+                                <Button
+                                    onClick={handleReviewSubmit}
+                                >
+                                    Submit Review
+                                </Button>
+                            </div>
+                        </>
+                    )}
                 <div className='px-10 mt-10'>
                     <h1 className='text-3xl font-bold'>
                         Reviews
@@ -171,24 +288,86 @@ export default function Book() {
                     {
                         reviews.map((review, i) => (
                             <div className='mt-4' key={i}>
-                                <p className='text-gray-400'>By {review?.userId?.username}</p>
-                                <p className='text-gray-400'>Rating:{review.rating.toFixed(2)} &#9733;</p>
+                                <div className='
+                                flex justify-between items-center
+                                '>
+                                    <div>
+                                        <p className='text-gray-400'>By {review?.userId?.username}</p>
+                                        <p className='text-gray-400'>Rating:{review.rating.toFixed(2)} &#9733;</p>
+                                    </div>
+                                    {
+                                        userDetails?.user?._id === review?.userId?._id && (
+                                            <div>
+                                                <Button
+                                                    variant='ghost'
+                                                    className='text-blue-500'
+                                                    onClick={() => handleEditClick(review._id)}
+                                                >
+                                                    Edit Review
+                                                </Button>
+                                                <Button
+                                                    variant='ghost'
+                                                    className='text-red-500'
+                                                    onClick={() => handleDeleteReview(review._id)}
+                                                >
+                                                    Delete Review
+                                                </Button>
+                                            </div>
+                                        )
+                                    }
+                                </div>
                                 {
-                                    userDetails?.user?.role === 'teacher' && (
-                                        <Button
-                                            variant='ghost'
-                                            className='text-yellow-500'
-                                        >
-                                            A teacher reviewed this book
-                                        </Button>
+                                    editingReviewId === review._id ? (
+                                        <>
+                                            <div className='flex gap-2'>
+                                                {[1, 2, 3, 4, 5].map((star) => (
+                                                    <button
+                                                        key={star}
+                                                        onMouseEnter={() => handleStarHover(star)}
+                                                        onMouseLeave={() => handleStarHover(0)}
+                                                        onClick={() => handleStarClick(star)}
+                                                        className={`text-2xl ${(hoveredStars >= star || stars >= star) ? 'text-yellow-400' : 'text-gray-300'
+                                                            } cursor-pointer`}
+                                                    >
+                                                        &#9733;
+                                                    </button>
+                                                ))}
+                                            </div>
+                                            <Input placeholder='Enter your review'
+                                                value={reviewText}
+                                                onChange={(e) => setReviewText(e.target.value)}
+                                            />
+                                            <Textarea placeholder='Enter your review'
+                                                value={reviewBody}
+                                                onChange={(e) => setReviewBody(e.target.value)}
+                                            />
+                                            <Button
+                                                onClick={() => handleUpdateReview(review._id)}
+                                            >
+                                                Update Review
+                                            </Button>
+                                            <Button
+                                                variant='ghost'
+                                                onClick={handleCancelEdit}
+                                            >
+                                                Cancel
+                                            </Button>
+                                        </>
+                                    ) : (
+                                        <div className='border-b pb-4'>
+                                            <h1 className='text-2xl font-bold'>
+                                                {review.title}
+                                            </h1>
+                                            <p className='text-justify'>
+                                                {review.content}
+                                            </p>
+                                        </div>
                                     )
                                 }
-                                <p className='text-justify'>
-                                    {review.content}
-                                </p>
                             </div>
                         ))
                     }
+
                 </div>
 
             </div>

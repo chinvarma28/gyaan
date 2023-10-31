@@ -37,8 +37,6 @@ exports.getAllReviews = async (req, res) => {
 // Controller to get a review by ID
 exports.getReviewById = async (req, res) => {
     const { bookId } = req.params;
-    
-
     try {
       const reviews = await Review.find({
           bookId
@@ -49,3 +47,25 @@ exports.getReviewById = async (req, res) => {
         res.status(500).json({ message: 'Internal Server Error' });
     }
 };
+
+exports.deleteReview = async (req, res) => {
+    try {
+        const review = await Review.findByIdAndDelete(req.params.id);
+        return res.status(200).json(review);
+    } catch (error) {
+        return res.status(500).json({
+            error: 'Server error'
+        });
+    }
+}
+
+exports.updateReview = async (req, res) => {
+    try {
+        const review = await Review.findByIdAndUpdate(req.params.id, req.body)
+        return res.status(200).json(review);
+    } catch (error) {
+        return res.status(500).json({
+            error: 'Server error'
+        });
+    }
+}
