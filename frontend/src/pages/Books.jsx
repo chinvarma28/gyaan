@@ -7,11 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "../components/ui/card"
-import { Button } from "@/components/ui/button"
 import { useSearch } from "../store/search-context";
 import { Link } from "react-router-dom";
 // import Filter from "../components/filter";
-import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
 export default function Books() {
   const { searchQuery } = useSearch();

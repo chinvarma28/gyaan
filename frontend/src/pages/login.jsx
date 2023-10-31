@@ -42,7 +42,7 @@ export function Login() {
                 localStorage.setItem('token', JSON.stringify(data.token).slice(1, -1));
                 toast({
                     title: data.message,
-                    description: "Congrats Dear Student! You have successfully created your account.",
+                    description: "Congrats  You have successfully created your account.",
                 })
             } else {
                 toast({

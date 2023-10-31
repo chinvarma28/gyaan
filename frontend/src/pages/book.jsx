@@ -131,7 +131,7 @@ export default function Book() {
                 </div>
                 <div className='px-10 mt-10'>
                     <p className='text-justify'>
-                        Harry Potter and the Philosopher&apos;s Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling&apos;s debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry. Harry makes close friends and a few enemies during his first year at the school, and with the help of his friends, Harry faces an attempted comeback by the dark wizard Lord Voldemort, who killed Harry&apos;s parents, but failed to kill Harry when he was just 15 months old.
+                        {book.description}
                     </p>
                 </div>
                 <div className='flex flex-col mt-16 px-10 gap-4'>
@@ -171,8 +171,8 @@ export default function Book() {
                     {
                         reviews.map((review, i) => (
                             <div className='mt-4' key={i}>
-                                <p className='text-gray-400'>By {review.userId.username}</p>
-                                <p className='text-gray-400'>Rating: {review.rating} &#9733;</p>
+                                <p className='text-gray-400'>By {review?.userId?.username}</p>
+                                <p className='text-gray-400'>Rating:{review.rating.toFixed(2)} &#9733;</p>
                                 {
                                     userDetails?.user?.role === 'teacher' && (
                                         <Button

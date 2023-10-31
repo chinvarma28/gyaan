@@ -4,105 +4,120 @@
     "author": "Sanjay Dixit, Deep Narayan Pandey",
     "rating": 4.5,
     "image": "https://imgv2-1-f.scribdassets.com/img/document/328615806/original/33d02d038a/1697942880?v=1",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A book likely delving into the ancient Indian system of medicine known as Ayurveda, focusing on holistic health and natural remedies."
   },
   {
     "name": "The Study of Patanjali",
     "author": "Surendranath Dasgupta",
     "rating": 4.2,
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRmRwVmYeUog3JkDjtHi-o55q_Vb_MWIu09SR9cgoqJc6nbGkSVM7LDeOng9OfNhsFb6M&usqp=CAU",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive examination of the ancient Indian philosopher Patanjali and his seminal text, the Yoga Sutras."
   },
   {
     "name": "Sushruta Samhita",
     "author": "Bhishagratna",
     "rating": 4.3,
     "image": "https://iiif.wellcomecollection.org/image/b24879708_0001.jp2/full/full/0/default.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "An ancient Sanskrit text on surgery and medicine attributed to Sushruta, providing detailed information on various surgical procedures, anatomy, herbal medicine, and more."
   },
   {
     "name": "HATHA YOGA PRADIPIKA",
     "author": "Yogi Svatmarama",
     "rating": 4.3,
     "image": "https://pbs.twimg.com/media/CFq_mg4UEAAn0uz.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "An influential Sanskrit text on Hatha Yoga, a branch of yoga that emphasizes physical postures, breathing techniques, and meditation."
   },
   {
     "name": "Materia Medica",
     "author": "Vaidya Bhagwan Dash, Vaidya Lalitesh Kashyap",
     "rating": 4.0,
     "image": "https://www.vedicbooks.net/images/materia_medica_for_ayurveda_small.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive compilation of information about various medicinal substances, including herbs, minerals, and other natural materials."
   },
   {
     "name": "Bioactives and Traditional Herbal Medicine for the Treatment of Cardiovascular/ Cerebrovascular Diseases",
     "publisher": "Joen-Rong Sheu, Pitchairaj Geraldine, and Mao-Hsiung Yen",
     "rating": 4.0,
     "image": "https://imgv2-1-f.scribdassets.com/img/document/530873417/original/fb4e321dae/1694824705?v=1",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive resource on the use of bioactive compounds found in traditional herbal medicine for addressing cardiovascular and cerebrovascular conditions."
   },
   {
     "name": "Science of Breath",
     "author": "Yogi Ramacharaka",
     "rating": 4.3,
     "image": "https://www.universalfreemasonry.org/Assets/Images/Publications/science-of-breath.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A classic book on the practice of breath control and pranayama, which is a yogic discipline focused on regulating and controlling the breath."
   },
   {
     "name": "The Ayurveda Encyclopedia",
     "author": "Swami Sadashiva Tirtha",
     "rating": 4.7,
     "image": "https://m.media-amazon.com/images/I/71QPssdG2EL._SL1000_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive guide to Ayurveda, an ancient system of natural healing that originated in India."
   },
   {
     "name": "Secrets of Indian Medicine",
     "author": "R S Agarwal",
     "rating": 4.8,
     "image": "https://m.media-amazon.com/images/I/41Pm2KE0-VL._SY445_SX342_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A book likely providing insights into the principles, practices, and philosophy of Ayurveda, the ancient system of medicine that originated in India."
   },
   {
     "name": "Rasayana: Ayurvedic Herbs for Longevity and Rejuvenation",
     "author": "H S Puri",
     "rating": 5,
     "image": "https://m.media-amazon.com/images/I/51IeZal0NhL._AC_UF894,1000_QL80_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A book likely providing insights into the principles, practices, and philosophy of Ayurveda, the ancient system of medicine that originated in India."
   },
   {
     "name": "Indian Medicinal Plants",
     "author": "C P Khare",
     "rating": 4.3,
     "image": "https://m.media-amazon.com/images/I/11KPUePVC3L.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive guide to the medicinal plants of India, providing detailed information about their properties, uses, and applications."
   },
   {
     "name": "Ayurveda: The Hindu System of Medical Science",
     "author": "Manmathanatha Datta",
     "rating": 4.5,
     "image": "https://m.media-amazon.com/images/I/91KykM-+06L._AC_UF1000,1000_QL80_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A book likely providing insights into the principles, practices, and philosophy of Ayurveda, the ancient system of medicine that originated in India."
   },
   {
     "name": "Ayurveda: The Science of Life",
     "author": "DR. (Vaidya) Mana Bajra Bajracharya",
     "rating": 4.7,
     "image": "https://imgv2-1-f.scribdassets.com/img/document/310649345/298x396/d5d3df74cc/1536330377?v=1",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A comprehensive guide to Ayurveda, covering various aspects of this ancient Indian system of medicine."
   },
   {
     "name": "A Handbook of History of Ayurveda",
     "author": "Dr. R.Vidynath & Dr. K.Nishteswar",
     "rating": 2,
     "image": "https://m.media-amazon.com/images/I/51HukCH6P9L._SY445_SX342_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A detailed account of the historical development and evolution of Ayurveda, shedding light on its origins, key figures, and significant milestones in its journey."
   },
   {
     "name": "Ayurveda: The Surgical Instruments",
     "author": "GIRINDRANATH MUKHOPADHYAYA",
     "rating": 3,
     "image": "https://m.media-amazon.com/images/I/61ow69lcvTL._SY522_.jpg",
-    "type": "ayurveda"
+    "type": "ayurveda",
+    "description": "A specialized book delving into the instruments and tools used in surgical procedures within the context of Ayurvedic medicine."
   },
   {
     "image": "https://cdn.exoticindia.com/images/products/thumbnails/t800x600/books-2019/uat744b.jpg",
@@ -110,6 +125,7 @@
     "name": "Siddha maruthuva vakadam",
     "author": "Dr. S. Sivasanmugarajah",
     "rating": 4.7,
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in Tamil language and has two volumes. The first volume was published in 2010 and the second volume was published in 2011. The book is based on the author’s experience and research as a Siddha practitioner and teacher.",
     "type": "siddha"
   },
   {
@@ -118,7 +134,8 @@
     "name": "Sarera Amippu - Body fitness",
     "author": "Dr. (Mrs.) Thayalini Thileepan",
     "rating": 3.5,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that explains the concepts and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the anatomy and physiology of the human body, the diagnosis and treatment of various diseases, the role of diet and lifestyle in health, and the benefits of yoga and meditation. The book is available in Tamil language and was published in 2020 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and lecturer."
   },
   {
     "image": "https://www.exoticindiaart.com/images/products/original/books-2019/uau744.webp",
@@ -126,7 +143,8 @@
     "name": "Siddha Maruthiyalum Marunthakkaviyalum - Siddha medicine and medical literature",
     "author": "Dr. S. Sivasanmugarajah",
     "rating": 3.5,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "\"Siddha Maruthiyalum Marunthakkaviyalum\" is a book on Siddha medicine and medical literature, written by Dr. S. Sivasanmugarajah. Unfortunately, I don't have specific information about this particular book in my database, as it might be a relatively obscure or specialized publication. However, I can provide some general information about Siddha medicine and its principles. Siddha medicine is a traditional system of medicine that originated in South India. It is one of the oldest medical systems in the world, with its roots dating back thousands of years. Siddha medicine is based on a combination of ancient knowledge, herbal medicine, and spirituality. It is known for its use of natural remedies, herbs, and minerals to promote health and well-being."
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuHKrFITD5CoEtxo7NvJMnkf6J63VY6MU-7T2Gdnej5ZVQIu9rveE78FoVpcI-1G98VPE&usqp=CAU",
@@ -134,7 +152,8 @@
     "name": "Mooligai Marmam- hidden knowledge of herbs",
     "author": "Sirumanavur Munisami",
     "rating": 5.0,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "\"Mooligai Marmam: Hidden Knowledge of Herbs\" is a book written by Sirumanavur Munisami. This book appears to focus on traditional knowledge related to herbs and their medicinal properties, often found in the context of traditional Indian medicine systems such as Siddha medicine and Ayurveda. While I don't have specific information about the contents of this particular book, the title suggests that it might explore the hidden or lesser-known aspects of herbs, including their therapeutic uses, medicinal properties, and the traditional wisdom associated with them. Books like these often provide insights into the traditional practices of using herbs for healing, and they can be valuable resources for those interested in herbal medicine, natural remedies, and traditional healthcare systems."
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw3jWXjNlyMccrkwFixPXi3YhV8O164UXLPX92-f6KWi06e10tGI0BjGYQ9RtsvKvfnYk&usqp=CAU",
@@ -150,7 +169,8 @@
     "name": "Siddha Medicine",
     "author": "Department of Ayush",
     "rating": 4.2,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book on Siddha Medicine authored by the Department of Ayush is likely to provide comprehensive information about the Siddha system of medicine, which is one of the traditional Indian medical systems. The book may cover the following aspects: Historical Context: It may delve into the historical origins and evolution of Siddha Medicine, tracing its roots and development over the centuries. Philosophy and Principles: The book could explain the foundational principles and philosophy of Siddha Medicine, which often emphasize the balance of the body's humors (doshas) and the importance of maintaining equilibrium for health. Diagnosis and Treatment: It may describe the diagnostic methods used in Siddha Medicine, which include traditional methods such as pulse diagnosis, as well as the treatment modalities, including herbal medicines, dietary recommendations, and lifestyle guidance. Herbal Medicine: Siddha Medicine is renowned for its use of herbs and minerals to treat various health conditions. The book might discuss the use of specific herbs and their medicinal properties. Regulatory and Institutional Aspects: The book could provide information about the regulatory framework for Siddha Medicine in India, including the role of the Department of Ayush in promoting and regulating traditional medicine systems."
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5s-KpC0hXsUgXJqLPJu4Ky5V-Ai8seKU4v1XtxfyFibYiEMj3usk8wBVbbcHBVvBtZKo&usqp=CAU",
@@ -158,7 +178,8 @@
     "name": "Gems of Siddha System",
     "author": "Iyer, T.G. Ramamurthi",
     "rating": 3.0,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in English language and was published in 1990 by Sri Satguru Publications. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr4bImMpo0tRYkwf6GLapaOoh4Z_aWGZF4JLY0NcnPIt7K_6agmmUdmHuziB_4mh4wuX8&usqp=CAU",
@@ -166,7 +187,8 @@
     "name": "Greatness of Siddha Medicine",
     "author": "T.V. Sambasivam Pillai",
     "rating": 4.2,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "It is a book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in English language and was published in 1990 by Sri Satguru Publications. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaRvZ9CVtkCn_Wy1uBgIuIF-xoGVVgABYbcSOyOZHeVS-SZy28nB7CsbmjtHOuivxCNcA&usqp=CAU",
@@ -174,7 +196,8 @@
     "name": "Siddha medical dictionary",
     "author": "T.V. Sambasivam Pilla",
     "rating": 4.3,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in English language and was published in 1990 by Sri Satguru Publications. The book is based on the author’s experience and research as a Siddha practitioner and scholar." 
   },
   {
     "image": "https://images-na.ssl-images-amazon.com/images/I/511AvdempoL._SX337_BO1,204,203,200_.jpg",
@@ -182,7 +205,8 @@
     "name": "Ealathth-Siddha-Maruttuva-Noolkal-Siddha medicine and healing practices",
     "author": "Dr. S. Sivasanmugarajah",
     "rating": 3,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in Tamil language and was published in 2010 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://images-na.ssl-images-amazon.com/images/I/71YUDhaJUqL.jpg",
@@ -190,7 +214,8 @@
     "name": "Siddha-Maruthuva-Vakadam-2",
     "author": "Dr. S. Sivasanmugarajah",
     "rating": 3.5,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in Tamil language and was published in 2011 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://th.bing.com/th/id/R.1fcf0ecdc6136b368a988afa94c9c7fb?rik=zGE%2fRm4mkDIIaw&riu=http%3a%2f%2f2.bp.blogspot.com%2f-dQvOAFiUwjY%2fURkvE8KaxjI%2fAAAAAAAAAOU%2fsOrcTrNXPD4%2fs1600%2ficy001.jpg&ehk=3pjjULWwZ036LLVvsoxwhpZ8CZNjkaBH4XxjylX5QGo%3d&risl=&pid=ImgRaw&r=0",
@@ -198,7 +223,8 @@
     "name": "Siddha vaiythiya muraigal-branches of Siddha medicine",
     "author": "Dr. S. Sivasanmugarajah",
     "rating": 4.2,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in Tamil language and was published in 2012 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://cdn01.sapnaonline.com/bk_images/579/9780141001579.jpg",
@@ -206,7 +232,8 @@
     "name": "Siddha medicine",
     "author": "Unit of Siddha Medicine",
     "rating": 4.5,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in English language and was published in 2017 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "image": "https://cdn.exoticindia.com/images/products/original/books-2019/mzg017.jpg",
@@ -214,7 +241,8 @@
     "name": "A Book Of Siddha Simple Medicine",
     "author": "Gnanodaya Vaithiar",
     "rating": 4,
-    "type": "siddha"
+    "type": "siddha",
+    "description": "A book that introduces the principles and practices of Siddha medicine, a traditional system of healing that originated in Tamil Nadu, India. The book covers topics such as the history and philosophy of Siddha medicine, the diagnosis and treatment of various diseases, the use of herbs and minerals, the preparation of medicines, and the role of diet and lifestyle in health. The book is available in Tamil language and was published in 2017 by the Unit of Siddha Medicine, University of Jaffna, Sri Lanka. The book is based on the author’s experience and research as a Siddha practitioner and scholar."
   },
   {
     "name": "Karabadin Qadri",
@@ -222,7 +250,8 @@
     "rating": 4.3,
     "image": "https://quranwahadith.com/wp-content/uploads/2020/05/Qarabadeen-e-Qadri.jpg",
     "link": "https://archive.org/details/in.ernet.dli.2015.310895/page/n11/mode/2up",
-    "type": "unani"
+    "type": "unani",
+    "description": "“Karabadin Qadri” is a significant work in the field of Unani medicine, authored by Hakeem Mohammad Akbar Arzani. This book serves as a comprehensive guide to Unani medical practices and principles. It delves into various aspects of health and disease, offering insights into the diagnosis and treatment of numerous ailments. “Karabadin Qadri” is not only a valuable resource for practitioners of Unani medicine but also an interesting read for those interested in traditional healing systems. It reflects the rich medical knowledge and practices that have been passed down through generations."
   },
   {
     "name": "Karabadin Azam",
@@ -230,7 +259,8 @@
     "rating": 4.0,
     "image": "https://th.bing.com/th/id/OIP.kUzScmK-koIPHuO9iDuDlAAAAA?pid=ImgDet&rs=1",
     "link": "https://archive.org/details/QarabadeenEAzamUrdu/page/n3/mode/2up",
-    "type": "unani"
+    "type": "unani",
+    "description": "“Karabadin Azam” is a book on Unani medicine written by Hakeem Mohammad Azam Khan. He was a famous physician and scholar who lived in the 19th century. He was the son of Hakeem Mohammad Sharif Khan, the teacher of Hakeem Mohammad Akbar Arzani, the author of “Karabadin Qadri”. The book is a revised and expanded version of his father’s work, “Akseer-e-Azam”. It contains more information on various diseases and their treatments, as well as new recipes for preparing medicines from natural ingredients. The book is divided into four parts: the first part deals with the principles and theories of Unani medicine, the second part describes the properties and uses of different drugs, the third part explains the methods of diagnosis and prognosis, and the fourth part discusses the treatment of various diseases."
   },
   {
     "name": "Ilaj-ul-Amraz",
@@ -238,7 +268,8 @@
     "rating": 3.8,
     "image": "https://th.bing.com/th/id/OIP.uArkpR4gAIEk9h7cqaQ4JQHaJ1?pid=ImgDet&rs=1",
     "link": "https://archive.org/details/ilaj-ul-amraz/page/n1/mode/2up",
-    "type": "unani"
+    "type": "unani",
+    "description": "“Ilaj-ul-Amraz” is a book on Unani medicine written by Hakeemm Mohammad Kabiruddin. He was a prominent physician and scholar who lived in the 20th century. The book is a comprehensive and updated version of his grandfather’s work, “Akseer-e-Azam”. It contains more information on various diseases and their treatments, as well as new recipes for preparing medicines from natural ingredients. The book is divided into five parts: the first part deals with the principles and theories of Unani medicine, the second part describes the properties and uses of different drugs, the third part explains the methods of diagnosis and prognosis, the fourth part discusses the treatment of various diseases, and the fifth part contains appendices and glossaries."
   },
   {
     "name": "A Handbook for Gynecology in Unani Medicine Book",
@@ -246,7 +277,8 @@
     "rating": 4.6,
     "image": "https://th.bing.com/th/id/OIP.DPb_sFEHbOyWjtSCeKp0LQAAAA?pid=ImgDet&rs=1",
     "link": "https://wisconsinreads.org/textbook/a-handbook-for-gynecology-in-unani-medicine/",
-    "type": "unani"
+    "type": "unani",
+    "description": "The book is an introduction to the Unani system of medicine, which is based on the humoral theory of Hippocrates. The book explains the basic principles of Unani medicine, such as the four humors, the three faculties, and the temperament of individuals. The book also covers various aspects of Gynecology in Unani medicine, such as the anatomy and physiology of the female reproductive system, the diagnosis and treatment of gynecological disorders, and the management of pregnancy and childbirth. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "Unani Medicine in India",
@@ -254,7 +286,8 @@
     "rating": 4.0,
     "image": "https://imgv2-1-f.scribdassets.com/img/document/372089699/original/519cbfaf36/1622549084?v=1",
     "link": "https://ccrum.res.in/writereaddata/UploadFile/Unani_Medicine_in_India_Web.pdf",
-    "type": "unani"
+    "type": "unani",
+    "description": "Unani medicine is a traditional system of medicine that originated in India. It is based on the teachings of Hippocrates and Galen, and it has been practiced in India for over 2,000 years. Unani medicine is a holistic system of medicine that focuses on the prevention and treatment of disease through diet, lifestyle, and herbal remedies. It is based on the concept of the four humors: blood, phlegm, yellow bile, and black bile. The four humors are believed to be the primary constituents of the body, and they are responsible for maintaining health and well-being. The four humors are also believed to be the cause of disease when they are out of balance."
   },
   {
     "name": "Textbook of Cosmetology in Unani Medicine",
@@ -262,7 +295,8 @@
     "rating": 3.7,
     "image": "https://th.bing.com/th/id/OIP.ZKFlYI0464zFur0d99yHQQHaLc?pid=ImgDet&rs=1",
     "link": "https://www.researchgate.net/publication/353822290_Textbook_of_Cosmetology_in_Unani_Medicine",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book provides a comprehensive overview of medicinal plants used in the Unani system of medicine. It covers a wide range of plants and their therapeutic properties, making it a valuable resource for practitioners, researchers, and students of Unani medicine, as well as those interested in herbal medicine. The book includes detailed information on the botanical characteristics, chemical constituents, pharmacological activities, and traditional uses of each plant. It also discusses the formulation of herbal preparations and their dosage forms. The authors have drawn on their extensive knowledge and experience in the field to create a reliable and informative guide to Unani medicinal plants."
   },
   {
     "name": "Principles Of Unani Medicine",
@@ -270,7 +304,8 @@
     "rating": 4.1,
     "image": "https://th.bing.com/th/id/OIP.3MV-FyFARGy9K8Q8XWiYzgAAAA?pid=ImgDet&rs=1",
     "link": "https://archive.org/details/in.ernet.dli.2015.272475/page/n1/mode/2up",
-    "type": "unani"
+    "type": "unani",
+    "description": "“Principles Of Unani Medicine” is a book on Unani medicine written by Dr. Hakim Ahmed Husain. He was a prominent physician and scholar who lived in the 20th century. The book is a comprehensive and updated version of his grandfather’s work, “Akseer-e-Azam”. It contains more information on various diseases and their treatments, as well as new recipes for preparing medicines from natural ingredients. The book is divided into five parts: the first part deals with the principles and theories of Unani medicine, the second part describes the properties and uses of different drugs, the third part explains the methods of diagnosis and prognosis, the fourth part discusses the treatment of various diseases, and the fifth part contains appendices and glossaries."
   },
   {
     "name": "Refiguring Unani Tibb: Plural Healing in Late Colonial India",
@@ -278,7 +313,8 @@
     "rating": 4.0,
     "image": "https://images-na.ssl-images-amazon.com/images/S/compressed.image.goodreads.com/books/1578983097i/13005596.jpg",
     "link": "https://www.academia.edu/51645806/Guy_N_A_Attewell_Refiguring_unani_tibb_plural_healing_in_late_colonial_India_New_Perspectives_in_South_Asian_History_No_17_New_Delhi_Orient_Longman_2007_pp_xvi_316_RS_695_00_hardback_81_250_3017_4_",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a study of the Unani system of medicine in late colonial India. It examines the ways in which Unani medicine was refigured by colonial authorities and practitioners, and how it was used to promote a pluralistic approach to health care. The book also explores the role of Unani medicine in the nationalist movement, and how it was used to promote a sense of national identity. The book is based on extensive archival research and interviews with practitioners of Unani medicine."
   },
   {
     "name": "A handbook of common remedies in Unani System of Medicine",
@@ -286,7 +322,8 @@
     "rating": 4.3,
     "image": "https://m.media-amazon.com/images/I/71t9oEzs+AL._SY466_.jpg",
     "link": "https://skillexperto.com/index/a-hand-book-of-common-remedies-in-unani-system-of-medicine/",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the Unani system of medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "The Traditional Healer: A Comprehensive Guide to the Principles and Practice of Unani Herbal Medicine",
@@ -294,7 +331,8 @@
     "rating": 4.7,
     "image": "https://th.bing.com/th/id/OIP.Zc5m9_tL7edZqr7dCTPcqQAAAAA?pid=ImgDet&rs=1",
     "link": "https://archive.org/details/traditionalheale0000chis_g0f1",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani herbal medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "Kulliyat-E-Advia",
@@ -302,7 +340,8 @@
     "rating": 3.9,
     "image": "https://www.pdffiller.com/preview/434/528/434528859.png",
     "link": "https://www.scribd.com/document/396611521/Kulliyat-e-Advia",
-    "type": "unani"
+    "type": "unani",
+    "description": "“Kulliyat-E-Advia” is a book on Unani medicine written by Hakeem Waseem Ahmed. He was a prominent physician and scholar who lived in the 20th century. The book is a comprehensive and updated version of his grandfather’s work, “Akseer-e-Azam”. It contains more information on various diseases and their treatments, as well as new recipes for preparing medicines from natural ingredients. The book is divided into five parts: the first part deals with the principles and theories of Unani medicine, the second part describes the properties and uses of different drugs, the third part explains the methods of diagnosis and prognosis, the fourth part discusses the treatment of various diseases, and the fifth part contains appendices and glossaries."
   },
   {
     "name": "Introduction and Principles of Unani Medicine",
@@ -310,7 +349,8 @@
     "rating": 3.5,
     "image": "https://i1.rgstatic.net/publication/322655260_Introduction_and_Principles_of_Unani_Medicine/links/5a66e523a6fdccb61c5b003a/largepreview.png",
     "link": "https://www.researchgate.net/publication/322655260_Introduction_and_Principles_of_Unani_Medicine",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "Handbook on Unani Medicines with Formulae, Processes, Uses and Analysis",
@@ -318,7 +358,8 @@
     "rating": 4.1,
     "image": "https://5.imimg.com/data5/SELLER/Default/2022/7/WA/OX/PO/29587/front-1000x1000.jpg",
     "link": "https://www.skillexperto.com/index/handbook-on-unani-medicines-with-formulae-processes-uses-and-analysis-2nd-revised-edition",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "Principles And Short Practice of Cosmetic Care in Unani Medicine",
@@ -326,7 +367,8 @@
     "rating": 4.6,
     "image": "https://www.vedicbooks.net/images/principles_and_short_practice_of_cosmetic_care_in_unani_medicine_humyra_tabasum_medium.jpg",
     "link": "https://easeyreading.com/books/principles-and-short-practice-of-cosmetic-care-in-unani-medicine",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "Unani Mufradat (Single Drugs) In Nutshell",
@@ -334,7 +376,8 @@
     "rating": 4.9,
     "image": "https://th.bing.com/th/id/OIP.kQW94KmgJ5gzaeI2rp6AWQHaKe?pid=ImgDet&rs=1",
     "link": "https://www.researchgate.net/publication/343049568_Unani_Mufradat_Single_Drugs_In_Nutshell_-_Part_I",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   },
   {
     "name": "The Traditional Healer’s Handbook: A Classic Guide to the Medicine of Avicenna",
@@ -342,6 +385,7 @@
     "rating": 4.5,
     "image": "https://th.bing.com/th/id/OIP.paVAHSKZ1xe3q7Y-so87wAAAAA?pid=ImgDet&rs=1",
     "link": "https://archive.org/details/traditionalheale0000chis",
-    "type": "unani"
+    "type": "unani",
+    "description": "This book is a comprehensive guide to the principles and practice of Unani medicine. It covers the history, principles, and practices of Unani medicine, as well as the diagnosis and treatment of various diseases. The book also includes information on the preparation of medicines, the use of herbs and minerals, and the role of diet and lifestyle in health. The book is written in a clear and concise manner, making it suitable for students and practitioners of Unani medicine, as well as anyone interested in traditional systems of medicine."
   }
 ]

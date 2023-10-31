@@ -62,7 +62,6 @@ exports.logout = (req, res) => {
 exports.getUserProfile = (req, res, next) => {
     const token = req.query.token
     console.log(req.body)
-    console.log(token,"tokennnn");
     jwt.verify(token, 'your_secret_key', (err, decodedToken) => {
         if (err) {
             return res.status(401).json({
