@@ -6,8 +6,10 @@ exports.register = async (req, res, next) => {
     try {
         const {
             username,
-            password
+            password,
+            type
         } = req.body;
+        console.log(req.body)
         const existingUser = await User.findOne({
             username
         });
@@ -17,7 +19,9 @@ exports.register = async (req, res, next) => {
         const user = new User({
             username,
             password,
+            role:type
         });
+        console.log(user)
         await user.save();
         const token = await user.generateAuthToken();
         const updatedUser=await User.findByIdAndUpdate(user._id,{token:token},{new:true});
@@ -38,6 +42,13 @@ exports.login = (req, res, next) => {
         if (!user) return res.status(401).json({
             message: info.message
         });
+        const role = req.body.type;
+        if (role != user.role) {
+            return res.status(401).json({
+                message: 'Invalid Role'
+            });
+        }
+
         req.logIn(user, (err) => {
             if (err) return next(err);
             const token = jwt.sign({

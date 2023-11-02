@@ -221,7 +221,7 @@ export default function Book() {
                   "
                 />
                 {
-                    book.link ? (
+                    isLoggedIn && book.link ? (
                         <Button className="w-full">
                             <a href={book.link} target="_blank" rel="noreferrer">
                                 Download <Download className="inline-block" size={16} />
@@ -354,7 +354,12 @@ export default function Book() {
                                             </Button>
                                         </>
                                     ) : (
-                                        <div className='border-b pb-4'>
+                                            <div className='border-b pb-4'>
+                                                {userDetails?.user.role == 'teacher' && (
+                                                    <p className='text-blue-400'>
+                                                        Reviewed By a Teacher
+                                                    </p>
+                                                )}
                                             <h1 className='text-2xl font-bold'>
                                                 {review.title}
                                             </h1>

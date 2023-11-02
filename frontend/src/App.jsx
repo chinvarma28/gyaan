@@ -9,6 +9,7 @@ import { Login } from './pages/login';
 import { Register } from './pages/register';
 import { Toaster } from "@/components/ui/toaster"
 import { AuthProvider } from './store/auth-provider';
+import AboutUs from './pages/about-us';
 function App() {
   return (
     <>
@@ -24,8 +25,10 @@ function App() {
                   <Route element={<Login />} path="/login" />
                   <Route element={<Register />} path="/register" />
                   <Route element={<Book />} path="/books/:id" />
+                  <Route element={<AboutUs/>} path='about-us' />
                 </Routes>
               </div>
+              {/* <Footer /> */}
             </ThemeProvider>
           </SearchProvider>
         </AuthProvider>

@@ -66,12 +66,12 @@ export default function Books() {
                 <Card className="
             aspect-square rounded-t-lg h-[23rem] w-[19rem]
             ">
+              <Link to={`/books/${book._id}`}>
                   <img src={book.image}
                     alt=""
                     className="w-full h-48 object-cover hover:opacity-80 transition-opacity duration-300 ease-in-out
                       "
                   />
-                  <Link to={`/books/${book._id}`}>
                     <CardHeader className="rounded-lg">
                       <CardTitle className="truncate">{book.name}</CardTitle>
                       <CardDescription>
@@ -85,17 +85,6 @@ export default function Books() {
                       <p className="text-gray-400 truncate">By {book.author}</p>
                     </CardContent>
                   </Link>
-                  <CardFooter>
-                    {/* {
-                      book.link ? (
-                        <Button className="w-full">
-                          <a href={book.link} target="_blank" rel="noreferrer">
-                            Download <Download className="inline-block" size={16} />
-                          </a>
-                        </Button>
-                      ) : null
-                    } */}
-                  </CardFooter>
                 </Card>
               </div>
             ))

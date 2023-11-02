@@ -12,11 +12,19 @@ import { Label } from "@/components/ui/label"
 import { useToast } from "@/components/ui/use-toast"
 import { useAuth } from "../store/auth-provider"
 import { useEffect, useState } from 'react';
+import {
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
+} from "@/components/ui/select"
 
 export function Register() {
     const { toast } = useToast()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
+    const [type, setType] = useState('student');
     const { isLoggedIn, setIsLoggedIn } = useAuth();
 
 
@@ -33,7 +41,7 @@ export function Register() {
                 headers: {
                     'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({ username: email, password })
+                body: JSON.stringify({ username: email, password,type })
             });
 
             const data = await response.json();
@@ -58,7 +66,10 @@ export function Register() {
 
     return (
         <div className="lg:px-[20rem]">
-            <Card className="mt-12">
+            <div className="flex items-center justify-center mt-4">
+                <h1 className="text-black font-bold text-4xl dark:text-white">Gyaan</h1>
+            </div>
+            <Card className="mt-7">
                 <CardHeader className="space-y-1">
                     <CardTitle className="text-2xl">Create an account</CardTitle>
                     <CardDescription>
@@ -84,6 +95,22 @@ export function Register() {
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                         />
+                    </div>
+                    <div className="grid gap-2">
+                        <Label htmlFor="password">Type</Label>
+                        <p>{type}</p>
+
+                        <Select 
+                            onValueChange={(value) => setType(value)}
+                        >
+                            <SelectTrigger className="w-full">
+                                <SelectValue placeholder="Student" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectItem value="student">Student</SelectItem>
+                                <SelectItem value="teacher">Teacher</SelectItem>
+                            </SelectContent>
+                        </Select>
                     </div>
                 </CardContent>
                 <CardFooter className="flex flex-col">

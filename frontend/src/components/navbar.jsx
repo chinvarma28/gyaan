@@ -21,9 +21,10 @@ import {
     DropdownMenuTrigger,
 } from './ui/dropdown-menu';
 import { useEffect, useState } from 'react';
+import { XIcon } from 'lucide-react';
 
 export default function Navbar() {
-    const { setSearchQuery } = useSearch();
+    const { setSearchQuery, searchQuery } = useSearch();
     const { isLoggedIn } = useAuth();
     const [userDetails, setUserDetails] = useState(null);
     useEffect(() => {
@@ -47,22 +48,32 @@ export default function Navbar() {
         window.location.href = '/login';
     };
     return (
-        <nav className="bg-white p-4 border-b dark:bg-black">
+        <nav className="bg-white py-4 px-0 border-b dark:bg-black">
             <div className="container mx-auto">
                 <div className="flex justify-between items-center ">
                     <div className='flex items-center gap-4'>
                         <Link to="/">
                             <h1 className="text-black font-bold text-xl dark:text-white">Gyaan</h1>
                         </Link>
-                        <Input className="lg:w-96" placeholder="Search"
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                        />
+                        <div className="flex items-center">
+
+                            <Input className="lg:w-96" placeholder="Search" value={searchQuery}
+                                onChange={(e) => setSearchQuery(e.target.value)}
+                            />
+                            {searchQuery &&
+                                <button
+                                    // style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)' }}
+                                    onClick={() => setSearchQuery('')}
+                                    className='absolute  transform -translate-y-0 focus:outline-none translate-x-80 ml-5
+                            '
+                                >
+                                    <XIcon className='text-gray-400 dark:text-gray-700' />
+                                </button>
+                            }
+                        </div>
                     </div>
                     <div className="hidden md:flex space-x-4 items-center gap-4">
                         <ModeToggle />
-                        <GiBookshelf className="text-2xl text-black dark:text-white
-                        hover:text-gray-400 transition-colors duration-300 ease-in-out
-                      " />
                         {
                             isLoggedIn ? (
                                 <DropdownMenu>
@@ -88,7 +99,9 @@ export default function Navbar() {
                                         <DropdownMenuSeparator />
                                         <DropdownMenuGroup>
                                             <DropdownMenuItem>
-                                                Profile
+                                                <Link to="/about-us">
+                                                    About Us
+                                                </Link>
                                                 <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
                                             </DropdownMenuItem>
                                         </DropdownMenuGroup>
