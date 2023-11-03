@@ -11,7 +11,7 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-mongoose.connect('mongodb+srv://tejas:zoro_@cluster1.fd0kqlo.mongodb.net/kenjaku', {
+mongoose.connect('mongodb+srv://chinmayavarmav28:B26c2GMz66GucU4V@cluster0.yrhhsnj.mongodb.net/gyaan', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
